@@ -1,0 +1,82 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+  
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+\firstname{王逸群}
+\familyname{}
+\title{}               % optional, remove the line if not wanted
+
+\mobile{13390782526}                    % optional, remove the line if not wanted
+\email{wyqqrince@gmail.com}                      % optional, remove the line if not wanted
+%% \quote{\small{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}}
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{教育}
+\cventry{2014至今}{硕士}{南京大学计算机科学与技术系，导师：马晓星}{将于 2017 年毕业}{}{}
+\cventry{2010--2014}{本科}{南京大学计算机科学与技术系}{}{}{}  
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2014~至今}
+{利用轻量级形式化工具解决复杂软件系统中的问题}
+{Java}
+{研究生科研项目}{}
+{第一阶段是理论方面研究，使用形式化建模工具Alloy去解决验证分布式控制器正确性的问题，并提出一种模块化方法加速验证过程；第二阶段是利用该工具去解决云平台中配置管理问题，即对于一个应用场景，在验证其有效性的前提下，给出一套可行的配置方案，具体做法是利用ecore模型构建应用场景，然后使用该工具导入模型进行分析，最后通过调用封装好的chef接口来实现整个部署过程。整个研究项目是我一个人完成的。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014--2015}
+{基于SCA规范的支持动态更新的中间件系统}
+{Java}
+{研究生科研项目}{}
+{该系统是一个支持构件级别动态更新的中间件系统，它在Apache~Tuscany基础上扩展了对构件间动态依赖、事务的管理，支持构件应用的部署、运行和动态更新，同时兼容SCA规范，并对外提供了一组动态更新管理接口。在研究生阶段，我对该系统进行收尾工作，在了解其设计、功能等方面后，对系统实验进行了设计和开发，实验结果可以正确反映出不同更新算法的优势和特点。}
+
+\vspace*{0.2\baselineskip}
+\cventry{2014}
+{KR自动机分解算法实现及复杂度分析}
+{Java}
+{本科毕设}{}
+{该项目完成的是一个计算机理论方面的关于自动机分解算法的实现。在了解算法的基本原理和内容后，对数据结构和系统进行简单的设计，并且在项目开发的同时，进行了单元测试，功能测试等多种方法以保证系统的正确性和有效性。最后通过理论分析得到该算法的时间复杂度和空间复杂度，并利用实验数据对分析结果进行了验证。}
+
+\vspace*{0.2\baselineskip}
+
+\section{奖项}
+\cventry{2013}{国家奖学金}{}{}{}{}
+\cventry{2012}{高教社杯全国大学生数学建模竞赛本科组全国二等奖}{}{}{}{}
+\cventry{2012}{董氏东方企业奖学金}{}{}{}{}
+\cventry{2011}{人民奖学金三等奖}{}{}{}{}
+
+\section{技能}
+\cventry{语言}{Java > C++ > C}{}{}{}{}
+\cventry{英语}{CET-6}{较为流利的英语读写能力和口语}{}{}{}
+
+% \cvline{Photography}{\small Digital photography is my newest hobby.}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}

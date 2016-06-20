@@ -1,0 +1,98 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue, roman]{casual}
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Yiqun}
+\familyname{Wang}
+\title{}
+\mobile{+86 13390782526}
+\email{wyqqrince@gmail.com}
+%% \quote{``Do what you fear, and the death of fear is certain.''\\-- Anthony Robbins}
+
+%\phone{(312) 413-8265}                      % optional, remove the line if not wanted
+%\fax{312 996 1491}                          % optional, remove the line if not wanted
+%\photo[64pt]{avatar.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file;
+
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%% \renewcommand*{\sectionfont}{\LARGE\sffamily\monospace\slshape}
+%% \renewcommand*\addressfont{\fontfamily{pzc}\selectfont}
+%% \renewcommand*\sectionfont{\fontfamily{pzc}\fontsize{20}{24}\selectfont}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+\cventry{2014--Present}{MS in Compute Science, Supervisor: Xiaoxing Ma}{Nanjing University}{expected 2017}{}{}
+\cventry{2010--2014}{BS in Compute Science}{Nanjing University}{}{}{}
+
+\section{Project Experience}
+%% \subsection{Research Projects}
+
+\cventry{2014--present}
+{Alloy Project}
+{Java}
+{Research Project}{}
+{
+Alloy is a lightweight modeling tool. In the first phase, this project aimed to use Alloy to verify the correctness of distributed controllers. Besides, a modular verification was proposed to accelerate the former verification. In the second phase, Alloy was leveraged to dealing with configuration management in cloud platform. For an application scenario, the project provided an verification in Alloy and a deployment using Chef api. I have been working on this project since 2014 all
+by myself and the paper will be submitted to QRS '16.
+}
+
+\vspace*{0.2\baselineskip}
+
+\cventry{2014--2015}
+{ConUp Project}
+{Java}
+{Research Project}{}
+{
+Working with Guochao Ren, Dong Chen, Ping Su.\\
+ConUp is implemented on top of Apache Tuscany, aimed to support dynamic deployment, management and online evolution of components. It also provides different dynamic update algorithms and strategies. I mainly contributes to designing and developing the experiment part of ConUp which evaluates the performances of each different dynamic software update algorithms and strategies. As a consequence, the experiment result corresponds with mathematical analysis.
+}
+
+\vspace*{0.2\baselineskip}
+
+\cventry{2014}
+{KRdecom Project}
+{Java}
+{Graduation Project}{}
+{
+An implementation of Krohn-Rhodes decomposition theorem. I finished the tool's design, architecture and implementation by myself. I also provided unit testing and function testing to guarantee the correctness of implementation. Then I give an analysis of the algorithm's complexity and efficiency and verify them by experimental results.
+}
+
+\vspace*{0.2\baselineskip}
+
+
+\section{Awards}
+\cventry{2013}{National Scholarship}{}{}{}{}
+\cventry{2012}{Second Prize in China Undergraduate Mathematical Contest in Modeling}{}{}{}{}
+\cventry{2012}{Tung OOCL Scholarship}{}{}{}{}
+\cventry{2011}{Third Prize in People Scholarship}{}{}{}{}
+
+\section{Skills}
+\cventry{Languages}{Java > C++ > C}{}{}{}{}
+\cventry{English}{CET-6}{fluent in spoken and written English}{}{}{}
+
+% \closesection{}                   % needed to renewcommands
+% \renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\section{Extra 2}
+%\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+%\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+%cvlistdoubleitem[\Neutral]{Item 3}{}
+
+\end{document}
